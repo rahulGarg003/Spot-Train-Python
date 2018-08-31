@@ -1,15 +1,10 @@
 import urllib2
 import re
-import requests
 from bs4 import BeautifulSoup
 import datetime
 import json
-import types
-import pprint
 
-pp = pprint.PrettyPrinter()
 stncodes = []
-
 
 train_no = '19019'
 station_code = 'GGC'
@@ -44,15 +39,7 @@ for code in stncodes:
         break
     i = i+1
 stnname = jsonfile['stations']
-#print (stnname[i]['stnCodeName'])
 
 finalvar =  ("Current Station: {}, Jounery Station: {},Delay: {} min, Schedule Arrival: {}, Expected Arrival: {}, Schedule Depature: {}, Expected Departure: {}, Last Updated: {}"
        .format(curstnname,stnname[i]['stnCodeName'],stnname[i]['delayArr'],stnname[i]['schArrTime'],stnname[i]['actArr'],stnname[i]['schDepTime'],stnname[i]['actDep'],lastupdate))
-
-print finalvar
-#stationjson = json.loads(str(stnname[0]))
-#pp.pprint(stnname[0])
-#with open('data.json', 'w') as outfile:
- #   json.dump(p[0], outfile)
-
 
