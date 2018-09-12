@@ -1,5 +1,9 @@
 # Spot-Train-Python-API
 ## Spot your train via python web application.
+
+## Clone my repository using following link:
+https://github.com/rahulGarg003/Spot-Train-Python.git
+
 ### This appliction deployed on Heroku plateform
 https://blooming-anchorage-87163.herokuapp.com/TrainNo/StationCode
 
